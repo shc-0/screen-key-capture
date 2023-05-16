@@ -25,15 +25,3 @@ To install and set up the code, follow these steps:
 To use the code, simply run the `keylogger.py` script. The script will start capturing keystrokes and screen content immediately, and will continue running until you manually stop it.
 
 The screenshots captured by the code will be saved in a folder named according to the date and time of the screenshot, with the `.png` extension. The log file containing keystrokes typed by the user will be saved as `log.txt`.
-
-## Contributing
-
-If you would like to contribute to this project, please submit a pull request or contact the project maintainer for more information.
-
-## License
-
-This code is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-
-## Contact
-
-For more information about this code, please contact the project maintainer at [EMAIL ADDRESS].
