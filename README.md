@@ -1,18 +1,39 @@
-## Getting Started
+# Keylogger and Screen Scraper
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This repository contains code for capturing and logging screen content and keystrokes, useful for monitoring user activity or testing software. The code utilizes keylogging and screen scraping techniques to record all the user activity on the computer.
 
-## Folder Structure
+## Features
 
-The workspace contains two folders by default, where:
+The main features of this code include:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Keylogging: The code captures all keystrokes typed by the user and saves them to a log file called `log.txt`. The log file contains a record of all keystrokes typed by the user, along with the name of the window in which the keystrokes were typed.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Screen Scraper: The code captures screen content whenever the user changes the window, taking a screenshot and saving it in a folder named according to the date and time of the screenshot, with the `.png` extension.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Installation
 
-## Dependency Management
+To install and set up the code, follow these steps:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+1. Clone the repository to your local machine using `git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`.
+
+2. Install the required dependencies, which include Python and the `pyautogui` module.
+
+3. Run the `keylogger.py` script to start capturing keystrokes and screen content.
+
+## Usage
+
+To use the code, simply run the `keylogger.py` script. The script will start capturing keystrokes and screen content immediately, and will continue running until you manually stop it.
+
+The screenshots captured by the code will be saved in a folder named according to the date and time of the screenshot, with the `.png` extension. The log file containing keystrokes typed by the user will be saved as `log.txt`.
+
+## Contributing
+
+If you would like to contribute to this project, please submit a pull request or contact the project maintainer for more information.
+
+## License
+
+This code is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+## Contact
+
+For more information about this code, please contact the project maintainer at [EMAIL ADDRESS].
