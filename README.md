@@ -10,16 +10,6 @@ The main features of this code include:
 
 - Screen Scraper: The code captures screen content whenever the user changes the window, taking a screenshot and saving it in a folder named according to the date and time of the screenshot, with the `.png` extension.
 
-## Installation
-
-To install and set up the code, follow these steps:
-
-1. Clone the repository to your local machine using `[git clone https://github.com/shc-0/screen-key-capture.git]`.
-
-2. Copy the required dependencies, which is include in `lib` folder.
-
-3. Run the `App.java` script to start capturing keystrokes and screen content.
-
 ## Usage
 
 To use the code, simply run the `App.java` script. The script will start capturing keystrokes and screen content immediately, and will continue running until you manually stop it.
