@@ -4,7 +4,6 @@ import java.time.*;
 import java.util.*;
 import com.sun.jna.platform.win32.*;
 import com.sun.jna.platform.win32.User32;
-import com.sun.jna.platform.win32.WinUser;
 import com.sun.jna.platform.win32.WinDef.HWND;
 import java.awt.AWTException;
 import java.awt.GraphicsDevice;
@@ -97,7 +96,8 @@ public class App {
       System.arraycopy(curr_Window, 0, prev_Window, 0, curr_Window.length);
     }
 
-  
+    // current thread does not execute for more than 10 milliseconds
+    // to preventing other threads from executing
     try {
       Thread.sleep(10);
     } catch (InterruptedException e1) {
@@ -182,9 +182,9 @@ public class App {
       }
     });
 
-    Thread function2Thread = new Thread(App::capture);
+    Thread captureThread = new Thread(App::capture);
 
     loggerThread.start();
-    function2Thread.start();
+    captureThread.start();
   }
 }
