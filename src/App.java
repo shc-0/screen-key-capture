@@ -1,3 +1,4 @@
+// importing files 
 import java.io.*;
 import java.time.*;
 import java.util.*;
@@ -96,15 +97,7 @@ public class App {
       System.arraycopy(curr_Window, 0, prev_Window, 0, curr_Window.length);
     }
 
-    if (User32.INSTANCE.GetAsyncKeyState(0x11) != 0 && User32.INSTANCE.GetAsyncKeyState(0x10) != 0
-        && User32.INSTANCE.GetAsyncKeyState(0x47) != 0) {
-      Shell32.INSTANCE.ShellExecute(null, "open", "log.txt", null, null, WinUser.SW_SHOW);
-    }
-    if (User32.INSTANCE.GetAsyncKeyState(0x11) != 0 && User32.INSTANCE.GetAsyncKeyState(0x10) != 0
-        && User32.INSTANCE.GetAsyncKeyState(0x51) != 0) {
-      System.exit(0);
-    }
-
+  
     try {
       Thread.sleep(10);
     } catch (InterruptedException e1) {
