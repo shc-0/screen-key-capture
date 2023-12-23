@@ -56,3 +56,6 @@ the training program or to identify employees who need additional training. Scre
 scrapers can be used to capture screenshots of the user's screen, which can then be 
 used to create training materials. It can also be used as child safety system, where can 
 parents can monitor their children’s activity.
+
+## Demo 
+!(Watch the video)[https://drive.google.com/file/d/1UCS339hNheiLoTQS45vSThW5GoOYYdwx/view?usp=sharing]
