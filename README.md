@@ -58,4 +58,7 @@ used to create training materials. It can also be used as child safety system, w
 parents can monitor their children’s activity.
 
 ## Demo 
-!(Watch the video)[https://drive.google.com/file/d/1UCS339hNheiLoTQS45vSThW5GoOYYdwx/view?usp=sharing]
+
+
+https://github.com/shc-0/screen-key-capture/assets/80691054/8ef783a2-bc92-49f1-832e-b3e9430cb276
+
